@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evento</title>
+    <!-- Adiciona link do css -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Adiciona favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  </head>
+
+  <body>
+    <!-- Header contento logo, nome e menus -->
+    <header>
+      <div class="title">
+        <img src="./images/logo.png" width="50em" alt="Logo Viajar" />
+        <h1>Evento</h1>
+      </div>
+
+      <!-- Nav contento os links dos menus -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main contento conteudo principal da página -->
+
+    <main>
+      <!-- Section contento evento em destaque -->
+      <section>
+        <h2 class="title-section">Em destaque</h2>
+
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="./images/main-event.jpeg"
+              width="100%"
+              alt="Imagem do evento"
+            />
+          </div>
+
+          <div class="card-info">
+            <div class="card-info-main">
+              <div class="container-date">
+                <p class="text-red">
+                  <time datetime="2022-12-27 12:00">27 DEZ</time>
+                </p>
+
+                <p>></p>
+
+                <p class="text-red">
+                  <time datetime="2022-12-31 23:59">31 DEZ</time>
+                </p>
+              </div>
+
+              <h2>Réveillon Vira Jeri 2023</h2>
+              <span>Dunas de Jericoacoara, Jijoca de Jericoacoara - CE</span>
+            </div>
+
+            <div class="card-info-footer">
+              <button>Ver detalhes</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section contendo listagem dos eventos -->
+      <section id="eventos" class="events">
+        <h2 class="title-section">Lista de eventos</h2>
+
+        <ul class="list-events">
+          <!-- Evento 1 -->
+          <li class="card">
+            <div class="card-img">
+              <img
+                src="./images/event-01.png"
+                width="100%"
+                alt="Imagem do evento"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-info-main">
+                <div class="container-date">
+                  <p class="text-red">
+                    <time datetime="2022-08-10 12:00">10 AGO</time>
+                  </p>
+
+                  <p>></p>
+
+                  <p class="text-red">
+                    <time datetime="2022-08-16 12:00">16 AGO</time>
+                  </p>
+                </div>
+
+                <h2>SAMPA SKY</h2>
+                <span>
+                  Sampa Sky - Praça Pedro Lessa, 110 - Ed. Mirante do Vale, São
+                  Paulo - São Paulo
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Evento 2 -->
+          <li class="card">
+            <div class="card-img">
+              <img
+                src="./images/event-02.jpeg"
+                width="100%"
+                alt="Imagem do evento"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-info-main">
+                <div class="container-date">
+                  <p class="text-red">
+                    <time datetime="2022-07-09 12:00">SAB, 09 JUL · 12:00</time>
+                  </p>
+                </div>
+
+                <h2>Experimente</h2>
+                <span>Praça 4 Elementos, Nova Lima - MG</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- Evento 3 -->
+          <li class="card">
+            <div class="card-img">
+              <img
+                src="./images/event-03.png"
+                width="100%"
+                alt="Imagem do eventp"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-info-main">
+                <div class="container-date">
+                  <p class="text-red">
+                    <time datetime="2022-07-21 18:00">QUI, 21 JUL · 18:00</time>
+                  </p>
+                </div>
+
+                <h2>
+                  Workshop - As 5 competências profissionais que estão
+                  transformando o mercado de trabalho
+                </h2>
+                <span>Inovabra habitat, São Paulo - SP</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section contendo o conteudo sobre a empresa -->
+      <section id="sobre">
+        <h2 class="title-section">Sobre</h2>
+
+        <div class="about">
+          <h3>Quem somos</h3>
+          <p>
+            Somos uma startup em crescimento, cheia de desafios e oportunidades
+            que busca todos os dias se tornar uma versão melhor de si mesma.
+          </p>
+        </div>
+
+        <div class="believe">
+          <h3>No que acreditamos</h3>
+          <p>
+            Nossos valores são nosso guia no dia a dia e estão presentes até na
+            nossa forma de fazer negócio.
+          </p>
+        </div>
+
+        <div class="want">
+          <h3>O que queremos ser</h3>
+          <p>
+            Queremos ser referência no ramo de empresas de divulgação de
+            eventos, facilitando a vida de muitas pessoas.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section contento formulário de contato -->
+      <section id="contato">
+        <h2 class="title-section">Contato</h2>
+
+        <!-- Action definida como uma função JavaScript -->
+        <form class="form-contact" action="javascript:submitFormContact()">
+          <div class="form-group">
+            <input class="input-form" id="nome" placeholder="Nome" />
+            <input class="input-form" id="email" placeholder="E-mail" />
+          </div>
+
+          <textarea
+            class="textarea-form"
+            id="descricao"
+            name="story"
+            placeholder="Descrição"
+            rows="5"
+          ></textarea>
+
+          <div class="form-button">
+            <button class="button-send">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer contendo Copyright e redes sociais -->
+    <footer>
+      <p>Evento S.A. © Copyright 2022</p>
+
+      <div class="social">
+        <a href="#">
+          <img src="./images/insta.png" width="20px" alt="Instagram" />
+        </a>
+        <a href="#">
+          <img src="./images/linkedin.png" width="20px" alt="LinkedIn" />
+        </a>
+        <a href="#">
+          <img src="./images/twitter.png" width="20px" alt="Twitter" />
+        </a>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Importação do script contendo função utilizada no form -->
+  <script src="./index.js"></script>
+</html>
